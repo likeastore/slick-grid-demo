@@ -1,7 +1,10 @@
 :root {
-	var-red: #f80;
+	var-red: #333;
+	var-font: 'Helvetica', Arial, sans-serif;
 }
 
 h1 {
+	font-family: var(font);
 	color: var(red);
+	text-align: center;
 }
