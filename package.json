@@ -1,0 +1,19 @@
+{
+  "name": "slick-grid",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "strata": "~0.20.1"
+  },
+  "devDependencies": {
+    "gulp": "~3.3.0",
+    "gulp-myth": "~0.1.0",
+    "gulp-swig": "~0.1.0"
+  }
+}
