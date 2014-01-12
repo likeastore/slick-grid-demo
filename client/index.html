@@ -3,10 +3,820 @@
 <head>
 	<meta charset="utf-8">
 	<title>Slick-grid</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Lato:300,400,700,900|Allan:400,700|Raleway:400,500,300,600,700,800|Montserrat:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Knewave|Fugaz+One|Righteous' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/app.css">
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
-	<h1>Demo by Dmitri Voronianski</h1>
+	<header class="header">
+		<div class="header-wrap">
+			<h1 class="logo left"><a href="/">Likeastore.</a></h1>
+			<!-- <ul class="top-menu">
+				<li><a href="#" class="active">Discover</a></li>
+			</ul> -->
 
+			<div class="user-box right">
+				<a href="#" class="add-network"><span>+</span> Network</a>
+				<a href="#"><img src="http://images.ak.instagram.com/profiles/profile_524074717_75sq_1378569183.jpg"></a>
+			</div>
+		</div>
+	</header>
+
+	<!-- <section class="subheader">
+
+	</section> -->
+
+	<section class="ctrls">
+		<div class="ctrl-board clearfix">
+			<div class="ctrl-item ctrl-choose-networks left">
+				<i data-icon="S" class="ctrl-icon"></i><span>All Social Networks</span><i data-icon="8" class="ctrl-more-icon right"></i>
+			</div>
+			<div class="ctrl-item ctrl-choose-category left">
+				<i data-icon="#" class="ctrl-icon"></i><span>All Categories</span><i data-icon="8" class="ctrl-more-icon right"></i>
+			</div>
+			<div class="ctrl-item ctrl-search left">
+				<i data-icon="R" class="ctrl-icon"></i>
+				<input type="text" name="search" placeholder="Search Likeastore">
+			</div>
+		</div>
+	</section>
+
+	<section class="dashboard clearfix">
+		<ul class="likes-list">
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1348370-Hello-Startup-Framework" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/41071/screenshots/1348370/startupishere_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1348370-Hello-Startup-Framework" target="_blank">Hello Startup Framework</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/maDByte" target="_blank">Vladimir Kudinov</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1236110-thinking-of-likeastore-ui-updates" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/17725/screenshots/1236110/ls-ui-shot_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1236110-thinking-of-likeastore-ui-updates" target="_blank">Thinking Of Likeastore Ui Updates</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/voronianski" target="_blank">Dmitri Voronianski</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1221770-PassPic" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/107759/screenshots/1221770/passit-final.gif)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1221770-PassPic" target="_blank">Passpic</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/Creativedash" target="_blank">Creativedash</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1196162-The-Beautiful-Game-Logo" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/23569/screenshots/1196162/tbg_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1196162-The-Beautiful-Game-Logo" target="_blank">The Beautiful Game Logo</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/growcase" target="_blank">Emir Ayouni</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1182619-Error" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/100923/screenshots/1182619/error.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1182619-Error" target="_blank">Error</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/sorensen" target="_blank">Mads E. U. Sorensen</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1133603-Startup-Design-Framework-First-sneak-peek" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/41071/screenshots/1133603/ui_sk_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1133603-Startup-Design-Framework-First-sneak-peek" target="_blank">Startup Design Framework: First Sneak-peek</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/maDByte" target="_blank">Vladimir Kudinov</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1081826-Cosmo-mini-free" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/61660/screenshots/1081826/dribble_800x600_cosmo_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1081826-Cosmo-mini-free" target="_blank">Cosmo Mini Free</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/Icojam" target="_blank">Icojam</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1070802-Mail" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/47302/screenshots/1070802/mail.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1070802-Mail" target="_blank">Mail</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/rosenberg" target="_blank">Russ Rosenberg</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1068020-Icons" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/141038/screenshots/1068020/icons_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1068020-Icons" target="_blank">Icons</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/RovaneDurso" target="_blank">Rovane Durso</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1047980-Spotify-Fun-CMS" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/5634/screenshots/1047980/dribbble-1.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1047980-Spotify-Fun-CMS" target="_blank">Spotify Fun Cms</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/juliuskoroll" target="_blank">Julius Koroll</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1046154-Before-Sushi" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/180983/screenshots/1046154/before_sushi.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1046154-Before-Sushi" target="_blank">Before Sushi</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/jordivanderoord" target="_blank">Jordi van der Oord</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/1022371-Landing-Page-Element" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/13536/screenshots/1022371/sublime-text_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/1022371-Landing-Page-Element" target="_blank">Landing Page Element</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/roybarberuk" target="_blank">Roy Barber</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/968433-Freebie-PSD-Flat-UI-Kit-2-Blog" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/165589/screenshots/968433/blog-ui-sm_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/968433-Freebie-PSD-Flat-UI-Kit-2-Blog" target="_blank">Freebie Psd: Flat Ui Kit 2 (Blog)</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/rikitanone" target="_blank">Riki Tanone</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/955174-Playmakers" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/184577/screenshots/955174/playmakers_print_final_web_v1.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/955174-Playmakers" target="_blank">Playmakers</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/danielnyari" target="_blank">Daniel Nyari</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/947782-Freebie-PSD-Flat-UI-Kit" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/165589/screenshots/947782/flat-ui-sm_1x.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/947782-Freebie-PSD-Flat-UI-Kit" target="_blank">Freebie Psd: Flat Ui Kit</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/rikitanone" target="_blank">Riki Tanone</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/840996-LOL-UI" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/627/screenshots/840996/lolui_drbl.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/840996-LOL-UI" target="_blank">Lol Ui</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/bobbymckenna" target="_blank">Bobby McKenna</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/604752-I-m-on-flat-a-diet" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/42384/screenshots/604752/vodafone.png)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/604752-I-m-on-flat-a-diet" target="_blank">I&#39;m On Flat A Diet</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/rvk" target="_blank">Robert van Klinken</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/571478-Dark-Login" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/36837/screenshots/571478/dribbble.jpg)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/571478-Dark-Login" target="_blank">Dark Login</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/haziqmir" target="_blank">Haziq Mir</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/410520-Photogram-Like-Loding-Animation" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/1641/screenshots/410520/photogram-loading.gif)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/410520-Photogram-Like-Loding-Animation" target="_blank">Photogram Like Loding Animation</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/brdrck" target="_blank">Jeff Broderick</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://dribbble.com/shots/222354-Music-Town-logotype" class="cover" style="background-image: url(http://d13yacurqjgara.cloudfront.net/users/41394/screenshots/222354/music-town.jpg)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://dribbble.com/shots/222354-Music-Town-logotype" target="_blank">Music Town Logotype</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://dribbble.com/garybaldi" target="_blank">Igor Garybaldi</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon dribbble-icon"></i>
+					<span class="network-name">dribbble</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://youtube.com/watch?v=f1SXCiYWrwo" class="cover" style="background-image: url(https://i.ytimg.com/vi/f1SXCiYWrwo/hqdefault.jpg)" target="_blank"></a>
+
+						
+							<a href="http://youtube.com/watch?v=f1SXCiYWrwo" class="video" target="_blank"><i data-icon="6"></i></a>
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://youtube.com/watch?v=f1SXCiYWrwo" target="_blank">Pompeya - 90 (Official Music Video)</a>
+						
+					</div>
+
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon youtube-icon"></i>
+					<span class="network-name">youtube</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="https://github.com/IanLunn/Hover" target="_blank">Hover</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="https://github.com/IanLunn" target="_blank">IanLunn</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon github-icon"></i>
+					<span class="network-name">github</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="https://www.facebook.com/radeurope" target="_blank">Rad</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="" target="_blank">dmitri.voronianski</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon facebook-icon"></i>
+					<span class="network-name">facebook</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="https://twitter.com/digitalocean/status/402583631580766208" target="_blank">Host Your Git Repositories In 55 Seconds With @Gitlabhq And @Digitalocean: Http://t.co/wsqsexebhv</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="" target="_blank">digitalocean</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon twitter-icon"></i>
+					<span class="network-name">twitter</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://stackoverflow.com/questions/20177167" target="_blank">Get Arity Of A Function</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="" target="_blank">Kosmetika</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon stackoverflow-icon"></i>
+					<span class="network-name">stackoverflow</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="http://vimeo.com/81973720" class="cover" style="background-image: url(http://b.vimeocdn.com/ts/458/206/458206358_640.jpg)" target="_blank"></a>
+
+						
+							<a href="http://vimeo.com/81973720" class="video" target="_blank"><i data-icon="6"></i></a>
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="http://vimeo.com/81973720" target="_blank">Hyperbubble - A Synthesizer For Christmas</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="http://vimeo.com/ambarnavarro" target="_blank">Ambar Navarro</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon vimeo-icon"></i>
+					<span class="network-name">vimeo</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="https://www.facebook.com/photo.php?fbid=419537194844835&amp;set=a.357577534374135.1073741827.354196724712216&amp;type=1" class="cover" style="background-image: url(https://scontent-b.xx.fbcdn.net/hphotos-prn1/s720x720/1528713_419537194844835_1486416725_n.png)" target="_blank"></a>
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="https://www.facebook.com/photo.php?fbid=419537194844835&amp;set=a.357577534374135.1073741827.354196724712216&amp;type=1" target="_blank">We Anticipate Designers&#39; Happiness! Behance Is In! - Timeline Photos</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="" target="_blank">dmitri.voronianski</a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon facebook-icon"></i>
+					<span class="network-name">facebook</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+			<li>
+				<div class="image">
+					
+						<a href="https://www.behance.net/gallery/Yay-Festival-2012/11087397" class="cover" style="background-image: url(https://m1.behance.net/rendition/projects/11087397/404/2991ce3ca7c19e0e78d35c7b8e9e114d.jpeg)" target="_blank"></a>
+
+						
+					
+				</div>
+				<div class="info">
+					<div class="like-name">
+						
+							<a href="https://www.behance.net/gallery/Yay-Festival-2012/11087397" target="_blank">Yay Festival 2012</a>
+						
+					</div>
+
+					
+						<div class="like-author">
+							by <a href="https://www.behance.net/snask" target="_blank">Snask </a>
+						</div>
+					
+				</div>
+				<div class="stat">
+					<i class="font-icon behance-icon"></i>
+					<span class="network-name">behance</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			
+		</ul>
+	</section>
 </body>
 </html>

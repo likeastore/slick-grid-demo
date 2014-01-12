@@ -3,11 +3,90 @@
 <head>
 	<meta charset="utf-8">
 	<title>Slick-grid</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Lato:300,400,700,900|Allan:400,700|Raleway:400,500,300,600,700,800|Montserrat:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Knewave|Fugaz+One|Righteous' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/app.css">
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
-	<h1>Demo by {{user.displayName}}</h1>
+	<header class="header">
+		<div class="header-wrap">
+			<h1 class="logo left"><a href="/">Likeastore.</a></h1>
+			<!-- <ul class="top-menu">
+				<li><a href="#" class="active">Discover</a></li>
+			</ul> -->
 
+			<div class="user-box right">
+				<a href="#" class="add-network"><span>+</span> Network</a>
+				<a href="#"><img src="{{user.avatar}}"></a>
+			</div>
+		</div>
+	</header>
+
+	<!-- <section class="subheader">
+
+	</section> -->
+
+	<section class="ctrls">
+		<div class="ctrl-board clearfix">
+			<div class="ctrl-item ctrl-choose-networks left">
+				<i data-icon="S" class="ctrl-icon"></i><span>All Social Networks</span><i data-icon="8" class="ctrl-more-icon right"></i>
+			</div>
+			<div class="ctrl-item ctrl-choose-category left">
+				<i data-icon="#" class="ctrl-icon"></i><span>All Categories</span><i data-icon="8" class="ctrl-more-icon right"></i>
+			</div>
+			<div class="ctrl-item ctrl-search left">
+				<i data-icon="R" class="ctrl-icon"></i>
+				<input type="text" name="search" placeholder="Search Likeastore">
+			</div>
+		</div>
+	</section>
+
+	<section class="dashboard clearfix">
+		<ul class="likes-list">
+			{% for like in likes %}
+			<li>
+				<div class="image">
+					{% if like.thumbnail %}
+						<a href="{{like.source}}" class="cover" style="background-image: url({{like.thumbnail}})" target="_blank"></a>
+
+						{% if like.type == 'vimeo' or like.type == 'youtube' %}
+							<a href="{{like.source}}" class="video" target="_blank"><i data-icon="6"></i></a>
+						{% endif %}
+					{% elif like.kind == 'link' %}
+						<a href="{{like.source}}" class="cover" style="background-image: url({{like.avatarUrl}})" target="_blank"></a>
+					{% endif %}
+				</div>
+				<div class="info">
+					<div class="like-name">
+						{% if like.title %}
+							<a href="{{like.source}}" target="_blank">{{like.title|title}}</a>
+						{% elif like.repo %}
+							<a href="{{like.source}}" target="_blank">{{like.repo|title}}</a>
+						{% else %}
+							<a href="{{like.source}}" target="_blank">{{like.description|title}}</a>
+						{% endif %}
+					</div>
+
+					{% if like.authorName %}
+						<div class="like-author">
+							by <a href="{{like.authorUrl}}" target="_blank">{{like.authorName}}</a>
+						</div>
+					{% endif %}
+				</div>
+				<div class="stat">
+					<i class="font-icon {{like.type}}-icon"></i>
+					<span class="network-name">{{like.type}}</span>
+					<a href="#" class="share-link right"><i data-icon="2"></i></a>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
 </body>
 </html>
