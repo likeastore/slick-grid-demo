@@ -114,10 +114,13 @@ body {
 	text-decoration: none;
 }
 
-.user-box .add-network span {
+.user-box .add-network i {
+	display: inline-block;
 	color: #1abc9c;
 	font-size: 22px;
 	margin-right: 2px;
+	vertical-align: top;
+	line-height: 34px;
 }
 
 .ctrls {
