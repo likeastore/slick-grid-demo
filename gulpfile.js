@@ -11,7 +11,7 @@ gulp.task('styles', function () {
 
 gulp.task('templates', function () {
 	gulp.src('./views/*.html')
-		.pipe(swig({ load_json: true, defaults: { cache: false }}))
+		.pipe(swig({ ext: '.html', load_json: true, defaults: { cache: false }}))
 		.pipe(gulp.dest('./client'));
 });
 
